@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+emission_enabled = true
+emission = Color( 0.74902, 0.74902, 0.74902, 1 )
+emission_energy = 4.56
+emission_operator = 0
+emission_on_uv2 = false
+
+[node name="Spatial" type="Spatial"]
+
+[node name="CSGTorus" type="CSGTorus" parent="."]
+inner_radius = 1.43714
+outer_radius = 2.06609
+material = SubResource( 1 )
+
+[node name="CSGSphere" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.101162, 1.53034, 2.38419e-007 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 4 )
+
